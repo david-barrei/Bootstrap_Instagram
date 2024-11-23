@@ -7,28 +7,60 @@
   <title>Instagram</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1a62bd703b.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h1 class="h3">Instagram</h1>
-
+    <div class="d-flex align-items-center">
+      <i class="bi bi-instagram  me-2"></i>
+      <h1 class="h4 mb-8" >Instagram</h1>
+    </div>
       <!-- Button Group -->
-      <div class="btn-group" role="group">
+      <div class="btn-group " role="group">
         <!-- Botón "Create a new post" -->
-        <button type="button" class="btn btn-success">Create a new post</button>
+        <button type="button" class="btn btn-success "  data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post</button>
 
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <hr>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea  class="form-control"  placeholder="Add the caption of your post here"></textarea>
+                  </div>
+                </form>
+                <i class="bi bi-camera me-2"></i>
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Botón con engranaje y menú desplegable -->
         <div class="btn-group" role="group">
           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <i class="bi bi-gear"></i>
+            <i class="bi bi-gear "></i>
           </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Accesibility</a></li>
             <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <hr>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
           </ul>
         </div>
       </div>
@@ -40,24 +72,24 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#gallery-view"
             type="button" role="tab" aria-controls="gallery-view" aria-selected="true">
-            <i class="fas fa-th"></i> Galería
+            <i class="fas fa-th"></i> 
           </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="posts-tab" data-bs-toggle="pill" data-bs-target="#posts-view" type="button"
             role="tab" aria-controls="posts-view" aria-selected="false">
-            <i class="fas fa-square"></i> Posts
+            <i class="fas fa-square"></i> 
           </button>
         </li>
       </ul>
     </div>
 
-    <!-- Contenido de las pestañas -->
+    <!--  pestañas -->
     <div class="tab-content" id="pills-tabContent">
       <!-- Vista de Galería -->
       <div class="tab-pane fade show active" id="gallery-view" role="tabpanel" aria-labelledby="gallery-tab">
         <div class="row">
-          <!-- Imagen 1 -->
+         
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img
@@ -66,7 +98,7 @@
             </div>
           </div>
 
-          <!-- Imagen 2 -->
+         
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNy4-cvOt9xvdl0QbZ8PkehYJ3BKWD9OKsZA&s"
@@ -74,7 +106,7 @@
             </div>
           </div>
 
-          <!-- Imagen 3 -->
+         
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img src="https://img.panamericana.pe/noticia/2015/02/640-1424194066581.jpg.webp"
@@ -82,7 +114,7 @@
             </div>
           </div>
 
-          <!-- Imagen 4 -->
+         
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img src="https://www.fanaticosdelasmascotas.cl/wp-content/uploads/2023/10/foto-portada-mascotas.jpg"
@@ -90,7 +122,7 @@
             </div>
           </div>
 
-          <!-- Imagen 5 -->
+          
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img
@@ -99,7 +131,7 @@
             </div>
           </div>
 
-          <!-- Imagen 6 -->
+          
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXGWi1okziG1HMoIvMRjgkzoTcBaI8jBVa-A&s"
@@ -107,7 +139,7 @@
             </div>
           </div>
 
-          <!-- Imagen 7 -->
+          
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img
@@ -116,7 +148,7 @@
             </div>
           </div>
 
-          <!-- Imagen 8 -->
+          
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img
@@ -125,7 +157,7 @@
             </div>
           </div>
 
-          <!-- Imagen 9 -->
+          
           <div class="col-4 mb-3">
             <div class="ratio ratio-1x1">
               <img src="https://www.christiandve.com/wp-content/uploads/2015/05/Siri-comandos-graciosos-2.png"
@@ -138,7 +170,7 @@
 
       <!-- Vista de Posts -->
       <div class="tab-pane fade" id="posts-view" role="tabpanel" aria-labelledby="posts-tab">
-        <!-- Post 1 -->
+        
         <div class="card mx-auto mb-3" style="max-width: 600px;">
           <div class="card-header d-flex justify-content-between">
             <span>My Crazy Dog Spark!</span>
@@ -153,7 +185,7 @@
           </div>
         </div>
 
-        <!-- Post 2 -->
+        
         <div class="card mx-auto mb-3" style="max-width: 600px;">
           <div class="card-header d-flex justify-content-between">
             <span>Beautiful Earth</span>
@@ -168,7 +200,7 @@
           </div>
         </div>
 
-        <!-- Post 3 -->
+        
         <div class="card mx-auto mb-3" style="max-width: 600px;">
           <div class="card-header d-flex justify-content-between">
             <span>Risk Racing!</span>
