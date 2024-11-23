@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram </title>
+  <title>Instagram</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1a62bd703b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container ">
+  <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h1 class="h3">Instagram</h1>
 
@@ -33,105 +33,157 @@
         </div>
       </div>
     </div>
-    <!-- Icon Buttons -->
+
+    <!-- Navegación con iconos -->
     <div class="d-flex justify-content-center mb-4">
-
-
-      <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#galleryView"
-        aria-expanded="false" aria-controls="galleryView">
-
-        <i class="fas fa-th"></i>
-
-      </button>
-
-      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#postView" 
-        aria-controls="postView">
-
-        <i class="fas fa-square"></i>
-      </button>
+      <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="gallery-tab" data-bs-toggle="pill" data-bs-target="#gallery-view"
+            type="button" role="tab" aria-controls="gallery-view" aria-selected="true">
+            <i class="fas fa-th"></i> Galería
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="posts-tab" data-bs-toggle="pill" data-bs-target="#posts-view" type="button"
+            role="tab" aria-controls="posts-view" aria-selected="false">
+            <i class="fas fa-square"></i> Posts
+          </button>
+        </li>
+      </ul>
     </div>
 
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content" id="pills-tabContent">
+      <!-- Vista de Galería -->
+      <div class="tab-pane fade show active" id="gallery-view" role="tabpanel" aria-labelledby="gallery-tab">
+        <div class="row">
+          <!-- Imagen 1 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img
+                src="https://www.elespectador.com/resizer/v2/FJXU4SNXGZHUBBQQBL2T4C4I6U.png?auth=41bf9ec472f42455cba01f9d8d8231d95aa154e71c3d9e92ac5cb6de4501640a&width=1096&height=730&smart=true&quality=60"
+                class="img-fluid rounded" alt="Gallery Image 1">
+            </div>
+          </div>
 
-    <!-- Vista de Galería -->
-    <div id="galleryView" class="row grid-view collapse">
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 1">
+          <!-- Imagen 2 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNy4-cvOt9xvdl0QbZ8PkehYJ3BKWD9OKsZA&s"
+                class="img-fluid rounded" alt="Gallery Image 2">
+            </div>
+          </div>
+
+          <!-- Imagen 3 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img src="https://img.panamericana.pe/noticia/2015/02/640-1424194066581.jpg.webp"
+                class="img-fluid rounded" alt="Gallery Image 3">
+            </div>
+          </div>
+
+          <!-- Imagen 4 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img src="https://www.fanaticosdelasmascotas.cl/wp-content/uploads/2023/10/foto-portada-mascotas.jpg"
+                class="img-fluid rounded" alt="Gallery Image 4">
+            </div>
+          </div>
+
+          <!-- Imagen 5 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img
+                src="https://st.depositphotos.com/2195902/5037/v/450/depositphotos_50370695-stock-illustration-funny-monkey-with-glasses.jpg"
+                class="img-fluid rounded" alt="Gallery Image 5">
+            </div>
+          </div>
+
+          <!-- Imagen 6 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXGWi1okziG1HMoIvMRjgkzoTcBaI8jBVa-A&s"
+                class="img-fluid rounded" alt="Gallery Image 6">
+            </div>
+          </div>
+
+          <!-- Imagen 7 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img
+                src="https://diariocorreo.pe/resizer/qoWHbbYM3aXvJURuPf_qMPfKcaA=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/SZB3UQW7S5C23LBWWFO3ENEXPM.jpg"
+                class="img-fluid rounded" alt="Gallery Image 7">
+            </div>
+          </div>
+
+          <!-- Imagen 8 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img
+                src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A842PA4459PT28D301795094W8300H10000/views/1,width=378,height=378,appearanceId=842,backgroundColor=F2F2F2/odio-ser-tan-sexy-pero-soy-mecanico.jpg"
+                class="img-fluid rounded" alt="Gallery Image 8">
+            </div>
+          </div>
+
+          <!-- Imagen 9 -->
+          <div class="col-4 mb-3">
+            <div class="ratio ratio-1x1">
+              <img src="https://www.christiandve.com/wp-content/uploads/2015/05/Siri-comandos-graciosos-2.png"
+                class="img-fluid rounded" alt="Gallery Image 9">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 2">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 3">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 4">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 5">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 6">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 7">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 8">
-      </div>
-      <div class="col-4 mb-3">
-        <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Gallery Image 9">
+
+
+      <!-- Vista de Posts -->
+      <div class="tab-pane fade" id="posts-view" role="tabpanel" aria-labelledby="posts-tab">
+        <!-- Post 1 -->
+        <div class="card mx-auto mb-3" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between">
+            <span>My Crazy Dog Spark!</span>
+            <span>08/26</span>
+          </div>
+          <img
+            src="https://cdn0.expertoanimal.com/es/posts/5/0/2/las_10_razas_de_perros_mas_populares_del_mundo_23205_orig.jpg"
+            class="card-img-top" alt="Dog image">
+          <div class="card-body">
+            <p class="mb-2"><strong>204 Likes</strong></p>
+            <p>This is an example of a very good photo that you can post on Instagram.</p>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="card mx-auto mb-3" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between">
+            <span>Beautiful Earth</span>
+            <span>01/02</span>
+          </div>
+          <img
+            src="https://media.istockphoto.com/id/1442849073/es/foto/el-fondo-de-la-ilustraci%C3%B3n-3d-de-earth-space-planet-luces-de-la-ciudad-en-el-planeta.jpg?s=612x612&w=0&k=20&c=_4XkO9PXk12NxfhjOIt_toxIaqD-_3_yQou1Gb9jeqw="
+            class="card-img-top" alt="Earth image">
+          <div class="card-body">
+            <p class="mb-2"><strong>304 Likes</strong></p>
+            <p>Planet Earth is always a beauty.</p>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="card mx-auto mb-3" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between">
+            <span>Risk Racing!</span>
+            <span>01/08</span>
+          </div>
+          <img src="https://riskracing.com/cdn/shop/articles/a7dd91b2918ba5d7c02c028f50cb48a5_1024x.jpg?v=1623174765"
+            class="card-img-top" alt="Risk Racing">
+          <div class="card-body">
+            <p class="mb-2"><strong>24 Likes</strong></p>
+            <p>This is a racing adventure worth sharing!</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Post -->
-  <div id="postView" class="row collapse show">
-    <div class="card mx-auto mb-3" style="max-width: 600px;">
-      <div class="card-header d-flex justify-content-between">
-        <span>My Crazy dog Spark!</span>
-        <span>08/26</span>
-      </div>
-      <img
-        src="https://cdn0.expertoanimal.com/es/posts/5/0/2/las_10_razas_de_perros_mas_populares_del_mundo_23205_orig.jpg"
-        class="card-img-top" alt="Dog image">
-      <div class="card-body">
-        <p class="mb-2"><strong>204 Likes</strong></p>
-        <p>This is an example of a very good photo that you can post on Instagram.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Post2 -->
-  <div class="card mx-auto mb-3" style="max-width: 600px;">
-    <div class="card-header d-flex justify-content-between">
-      <span>My Crazy dog Spark!</span>
-      <span>01/2</span>
-    </div>
-    <img
-      src="https://media.istockphoto.com/id/1442849073/es/foto/el-fondo-de-la-ilustraci%C3%B3n-3d-de-earth-space-planet-luces-de-la-ciudad-en-el-planeta.jpg?s=612x612&w=0&k=20&c=_4XkO9PXk12NxfhjOIt_toxIaqD-_3_yQou1Gb9jeqw="
-      class="card-img-top" alt="Dog image">
-    <div class="card-body">
-      <p class="mb-2"><strong>304 Likes</strong></p>
-      <p>This is an example of a very good photo that you can post on Instagram.</p>
-    </div>
-  </div>
-  </div>
-
-  <!-- Post3 -->
-    <div class="card mx-auto mb-3" style="max-width: 600px;">
-      <div class="card-header d-flex justify-content-between">
-        <span>My Crazy dog Spark!</span>
-        <span>01/8</span>
-      </div>
-      <img src="https://riskracing.com/cdn/shop/articles/a7dd91b2918ba5d7c02c028f50cb48a5_1024x.jpg?v=1623174765"
-        class="card-img-top" alt="Dog image">
-      <div class="card-body">
-        <p class="mb-2"><strong>24 Likes</strong></p>
-        <p>This is an example of a very good photo that you can post on Instagram.</p>
-      </div>
-    </div>
-  </div>
-  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
